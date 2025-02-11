@@ -1,0 +1,32 @@
+# 📂 프로젝트 폴더 구조 설명
+
+1. data/                   → 데이터셋 저장 폴더
+   ├── raw/                → 원본 데이터 (Git에 업로드하지 않음)
+   ├── processed/          → 전처리된 데이터 (Git에 업로드하지 않음)
+
+2. notebooks/              → 주피터 노트북 저장 (모델 실험용)
+   ├── 01_skforecast.ipynb → Skforecast 모델 실험
+   ├── 02_arima_sarimax.ipynb → ARIMA & SARIMAX 실험
+   ├── ...
+
+3. models/                 → 학습된 모델 저장 (Git에 업로드하지 않음)
+   ├── arima_model.pkl     → ARIMA 모델 파일
+   ├── lstm_model.h5       → LSTM 모델 파일
+
+4. src/                    → 파이썬 코드 저장
+   ├── utils.py            → 유틸리티 함수 (데이터 전처리 등)
+   ├── train.py            → 모델 학습 스크립트
+   ├── predict.py          → 예측 실행 코드
+
+5. results/                → 실험 결과 저장
+   ├── figures/            → 시각화 이미지 저장
+   ├── metrics/            → 평가 지표 저장
+
+6. references/             → 참고 논문, 문서 정리
+   ├── papers/             → 논문 PDF
+   ├── articles/           → 블로그, 학습 자료
+
+7. 기타 주요 파일:
+   ├── README.md           → 프로젝트 소개 문서
+   ├── requirements.txt    → 필요한 패키지 목록
+   ├── .gitignore          → Git에서 제외할 파일 목록 설정
